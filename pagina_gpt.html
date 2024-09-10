@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página Web</title>
+    <!-- Link para o Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Cabeçalho com nome da página e menu de navegação -->
+    <header class="bg-dark text-white p-3">
+        <div class="container">
+            <h1 class="text-center">Minha Página Web</h1>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#secao1">Seção 1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#secao2">Seção 2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#secao3">Seção 3</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Corpo da página com três seções usando containers do Bootstrap -->
+    <main class="mt-4">
+        <div class="container" id="secao1">
+            <div class="p-5 bg-light">
+                <h2 class="text-center">Seção 1</h2>
+                <p class="text-center">Este é o conteúdo da primeira seção da página. Ela está envolvida em um container do Bootstrap para garantir o alinhamento correto e o comportamento responsivo.</p>
+            </div>
+        </div>
+
+        <div class="container" id="secao2">
+            <div class="p-5 bg-secondary text-white">
+                <h2 class="text-center">Seção 2</h2>
+                <p class="text-center">Esta é a segunda seção da página. O uso de classes do Bootstrap permite que ela tenha um fundo cinza e texto branco, mantendo a consistência visual.</p>
+            </div>
+        </div>
+
+        <div class="container" id="secao3">
+            <div class="p-5 bg-info text-dark">
+                <h2 class="text-center">Seção 3</h2>
+                <p class="text-center">Esta é a terceira seção da página, utilizando cores fornecidas pelo Bootstrap para o fundo e o texto. A responsividade garante que o conteúdo se ajuste a diferentes tamanhos de tela.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Rodapé com copyright e ano atual -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; <span id="ano"></span> Minha Página Web. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Link para o Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Script para atualizar o ano automaticamente -->
+    <script>
+        document.getElementById("ano").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
